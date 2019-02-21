@@ -6,3 +6,8 @@
 #changeme {
     color: green;
 }
+
+.box {
+    border: 1px solid;
+    padding: 20px;
+}

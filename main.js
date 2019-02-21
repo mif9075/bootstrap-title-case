@@ -2,7 +2,7 @@ window.onload = init;
 
 function init() {
     document.querySelector('#input')
-        .addEventListener('keydown', handleTyping);
+        .addEventListener('keyup', handleTyping);
 }
 
 function handleTyping(event) {
