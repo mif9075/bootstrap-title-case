@@ -5,6 +5,8 @@
 
 #changeme {
     color: green;
+    border: 1px solid;
+    padding: 9px;
 }
 
 .box {
