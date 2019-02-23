@@ -10,7 +10,7 @@ function init() {
 // use a loop to find the first letter in a word
 // the loop stops when there's no whitespace;
 function handleTyping(event) {
-    let userInput = event.target.value.toString( );
+    let userInput = event.target.value.toString();
     let answer = userInput.split(' ');
 
     // Codes
@@ -23,7 +23,7 @@ while (i < answer.length) {
     i++;
 }
 
-    document.querySelector('#result').innerText = answer;
+    document.querySelector('#result').innerText = answer.join (' ');
 }
 
 
