@@ -1,6 +1,14 @@
 .heading {
     font-weight: bold;
     font-size: 2em;
+
+}
+
+#input, #input2{
+    color: green;
+    border: 1px solid;
+    padding: 9px;
+
 }
 
 #result {
@@ -22,13 +30,17 @@
     
 }
 
+.box > h2 {
+    border: 1px solid;
+}
+
 .content {
     display: flex;
     flex-direction: row;
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
     .content {
         display: flex;
         flex-direction: column;
