@@ -27,6 +27,7 @@
     border: 1px solid;
     padding: 20px;
     margin: 20px;
+    width: 500px;
     
 }
 
@@ -44,7 +45,10 @@
     .content {
         display: flex;
         flex-direction: column;
-        padding: 3em !important;
       
     }
   }
+
+.jumbotron {
+    height: 100px;
+}
