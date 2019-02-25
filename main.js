@@ -16,14 +16,10 @@ function capitalizeTyping(event) {
 
 //     // Codes
     let i = 0;
-
-while (i < answer.length) {
-    
+    while (i < answer.length) {
     answer[i] = answer[i].charAt(0).toUpperCase() + answer[i].slice(1).toLowerCase();
-    
     i++;
 }
-
     document.querySelector('#result').innerText = answer.join (' ');
 }
 

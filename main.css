@@ -11,17 +11,13 @@
 
 }
 
-#result {
+#result, #result2 {
     color: green;
     border: 1px solid;
     padding: 9px;
+    background-color: white;
 }
 
-#result2 {
-    color: green;
-    border: 1px solid;
-    padding: 9px;
-}
 
 .box {
     border: 1px solid;
@@ -38,6 +34,7 @@
 .content {
     display: flex;
     flex-direction: row;
+    background-color: gainsboro;
     
 }
 
@@ -51,6 +48,11 @@
     }
   }
 
-.jumbotron {
-    height: 100px;
+.text-center {
+    border: 1px solid;
+    background-color: gray;
+}
+
+.footer {
+    background-color: gray;
 }
