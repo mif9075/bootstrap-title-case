@@ -9,10 +9,17 @@
     padding: 9px;
 }
 
+#result2 {
+    color: green;
+    border: 1px solid;
+    padding: 9px;
+}
+
 .box {
     border: 1px solid;
     padding: 20px;
     margin: 20px;
+    
 }
 
 .content {

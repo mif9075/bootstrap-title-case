@@ -1,19 +1,22 @@
+// Needed to Make sure that everything is loaded.
 window.onload = init;
+
 
 function init() {
     document.querySelector('#input')
         .addEventListener('keyup', handleTyping);
+    document.querySelector('#input2')
+        .addEventListener('keyup', reverseString);
+
 }
-// we want to get the input value
-// we want to take the first letter of every word to be capitalized
-// any letter after whitespace to be capitalized
-// use a loop to find the first letter in a word
-// the loop stops when there's no whitespace;
+
+
+// Function to capitalize first letter.
 function handleTyping(event) {
     let userInput = event.target.value.toString();
     let answer = userInput.split(' ');
 
-    // Codes
+//     // Codes
     let i = 0;
 
 while (i < answer.length) {
@@ -27,3 +30,26 @@ while (i < answer.length) {
 }
 
 
+
+
+
+
+//Function to Reverse Strings.
+
+
+function reverseString(event2) {
+    let userInput2 = event2.target.value.toString();
+    let answer2 = userInput2.split(' ');
+
+    // Codes
+    let i = 0;
+
+while (i < answer2.length) {
+    
+    answer2[i] = answer2[i].charAt(0).toUpperCase() + answer2[i].slice(1).toLowerCase();
+    
+    i++;
+}
+
+    document.querySelector('#result2').innerText = answer2.join (' ');
+}
