@@ -45,7 +45,9 @@
     .content {
         display: flex;
         flex-direction: column;
-      
+    }
+    .box {
+        width: auto;
     }
   }
 
