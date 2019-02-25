@@ -1,18 +1,16 @@
 // Needed to Make sure that everything is loaded.
 window.onload = init;
 
-
 function init() {
     document.querySelector('#input')
-        .addEventListener('keyup', handleTyping);
+        .addEventListener('keyup', capitalizeTyping);
     document.querySelector('#input2')
         .addEventListener('keyup', reverseString);
 
 }
 
-
 // Function to capitalize first letter.
-function handleTyping(event) {
+function capitalizeTyping(event) {
     let userInput = event.target.value.toString();
     let answer = userInput.split(' ');
 
@@ -31,25 +29,15 @@ while (i < answer.length) {
 
 
 
-
-
-
 //Function to Reverse Strings.
-
-
 function reverseString(event2) {
-    let userInput2 = event2.target.value.toString();
-    let answer2 = userInput2.split(' ');
-
+    let userInput2 = event2.target.value;
+    let answer2 = userInput2;
+    
     // Codes
-    let i = 0;
-
-while (i < answer2.length) {
-    
-    answer2[i] = answer2[i].charAt(0).toUpperCase() + answer2[i].slice(1).toLowerCase();
-    
-    i++;
-}
-
-    document.querySelector('#result2').innerText = answer2.join (' ');
+    let newString = '';
+    for (let i = answer2.length -1; i >=0; i--){
+        newString += answer2[i];
+    }
+    document.querySelector('#result2').innerText = newString;
 }
