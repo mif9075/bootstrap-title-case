@@ -10,9 +10,13 @@
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
     border: 1px solid;
     padding: 20px;
+    margin: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    
 }
