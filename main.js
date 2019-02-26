@@ -6,6 +6,8 @@ function init() {
         .addEventListener('keyup', capitalizeTyping);
     document.querySelector('#input2')
         .addEventListener('keyup', reverseString);
+    document.querySelector('#input3')
+        .addEventListener('keyup', capitalize2String);
 
 }
 
