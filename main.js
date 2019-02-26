@@ -2,11 +2,11 @@
 window.onload = init;
 
 function init() {
-    document.querySelector('#input')
+    document.querySelector('#capInput')
         .addEventListener('keyup', capitalizeTyping);
-    document.querySelector('#input2')
+    document.querySelector('#reverseInput')
         .addEventListener('keyup', reverseString);
-    document.querySelector('#input3')
+    document.querySelector('#capInput2')
         .addEventListener('keyup', capitalize2String);
 
 }
@@ -22,7 +22,7 @@ function capitalizeTyping(event) {
     answer[i] = answer[i].charAt(0).toUpperCase() + answer[i].slice(1).toLowerCase();
     i++;
 }
-    document.querySelector('#result').innerText = answer.join (' ');
+    document.querySelector('#capResult').innerText = answer.join (' ');
 }
 
 
@@ -37,7 +37,7 @@ function reverseString(event2) {
     for (let i = answer2.length -1; i >=0; i--){
         newString += answer2[i];
     }
-    document.querySelector('#result2').innerText = newString;
+    document.querySelector('#reverseResult').innerText = newString;
 }
 
 // Function to capitalize first letter without join or split.
@@ -50,13 +50,13 @@ function capitalize2String(event3) {
     answer3 = answer3.toLowerCase();
     mainAnswer = ' ';
 
-    while (i < answer3.length ) {
+    while (i < answer3.length) {
         if (i === 0) {
-            mainAnswer += answer3[i].toUpperCase().split(1);
+            mainAnswer += answer3[i].toUpperCase();
         }
         else if (answer3[i-1] === ' ') 
         {
-            mainAnswer += answer3[i].toUpperCase().split(1);
+            mainAnswer += answer3[i].toUpperCase();
         }
         else {
             mainAnswer += answer3[i];
@@ -66,5 +66,5 @@ function capitalize2String(event3) {
         
     
         
-    document.querySelector('#result3').innerText = mainAnswer;
+    document.querySelector('#capResult2').innerText = mainAnswer;
 }

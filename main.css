@@ -4,14 +4,14 @@
 
 }
 
-#input, #input2, #input3 {
+#capInput, #reverseInput, #capInput2 {
     color: green;
     border: 1px solid;
     padding: 9px;
 
 }
 
-#result, #result2, #result3 {
+#capResult, #reverseResult, #capResult2 {
     color: green;
     border: 1px solid;
     padding: 9px;
