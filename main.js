@@ -39,3 +39,17 @@ function reverseString(event2) {
     }
     document.querySelector('#result2').innerText = newString;
 }
+
+// Function to capitalize first letter without join or split.
+function capitalize2String(event3) {
+    let userInput3 = event3.target.value.toString();
+    let answer3 = userInput3.split(' ');
+
+//     // Codes
+    let i = 0;
+    while (i < answer3.length) {
+    answer3[i] = answer3[i].charAt(0).toUpperCase() + answer3[i].slice(1).toLowerCase();
+    i++;
+}
+    document.querySelector('#result3').innerText = answer3.join (' ');
+}

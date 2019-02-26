@@ -4,14 +4,14 @@
 
 }
 
-#input, #input2{
+#input, #input2, #input3 {
     color: green;
     border: 1px solid;
     padding: 9px;
 
 }
 
-#result, #result2 {
+#result, #result2, #result3 {
     color: green;
     border: 1px solid;
     padding: 9px;
