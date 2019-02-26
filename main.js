@@ -13,7 +13,7 @@ function init() {
 
 // Function to capitalize first letter.
 function capitalizeTyping(event) {
-    let userInput = event.target.value.toString();
+    let userInput = event.target.value;
     let answer = userInput.split(' ');
 
 //     // Codes
@@ -42,14 +42,19 @@ function reverseString(event2) {
 
 // Function to capitalize first letter without join or split.
 function capitalize2String(event3) {
-    let userInput3 = event3.target.value.toString();
-    let answer3 = userInput3.split(' ');
+    let userInput3 = event3.target.value;
+    let answer3 = userInput3;
 
 //     // Codes
     let i = 0;
+    answer3 = answer3.toLowerCase();
+
     while (i < answer3.length) {
-    answer3[i] = answer3[i].charAt(0).toUpperCase() + answer3[i].slice(1).toLowerCase();
-    i++;
-}
-    document.querySelector('#result3').innerText = answer3.join (' ');
+        if (i === 0 || i === ' ') {
+            answer3 = answer3[i].toUpperCase();
+        }
+        i++;
+    }
+        
+    document.querySelector('#result3').innerText = answer3;
 }
