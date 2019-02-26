@@ -48,13 +48,23 @@ function capitalize2String(event3) {
 //     // Codes
     let i = 0;
     answer3 = answer3.toLowerCase();
+    mainAnswer = ' ';
 
-    while (i < answer3.length) {
-        if (i === 0 || i === ' ') {
-            answer3 = answer3[i].toUpperCase();
+    while (i < answer3.length ) {
+        if (i === 0) {
+            mainAnswer += answer3[i].toUpperCase().split(1);
         }
-        i++;
+        else if (answer3[i-1] === ' ') 
+        {
+            mainAnswer += answer3[i].toUpperCase().split(1);
+        }
+        else {
+            mainAnswer += answer3[i];
+        }
+    i++;
     }
         
-    document.querySelector('#result3').innerText = answer3;
+    
+        
+    document.querySelector('#result3').innerText = mainAnswer;
 }
