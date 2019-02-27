@@ -63,8 +63,44 @@ function capitalize2String(event3) {
         }
     i++;
     }
-        
+    document.querySelector('#capResult2').innerText = mainAnswer;
+}
+
+//Function to Reverse Strings.
+function reverseString(event2) {
+    let userInput2 = event2.target.value;
+    let answer2 = userInput2;
     
-        
+    // Codes
+    let newString = '';
+    for (let i = answer2.length -1; i >=0; i--){
+        newString += answer2[i];
+    }
+    document.querySelector('#reverseResult').innerText = newString;
+}
+
+// Function for Emoji.
+function capitalize2String(event3) {
+    let userInput3 = event3.target.value;
+    let answer3 = userInput3;
+
+//     // Codes
+    let i = 0;
+    answer3 = answer3.toLowerCase();
+    mainAnswer = ' ';
+
+    while (i < answer3.length) {
+        if (i === 0) {
+            mainAnswer += answer3[i].toUpperCase();
+        }
+        else if (answer3[i-1] === ' ') 
+        {
+            mainAnswer += answer3[i].toUpperCase();
+        }
+        else {
+            mainAnswer += answer3[i];
+        }
+    i++;
+    }
     document.querySelector('#capResult2').innerText = mainAnswer;
 }
